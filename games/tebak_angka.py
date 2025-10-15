@@ -5,7 +5,7 @@ print("Peraturan:\n~ Dalam game ini pemain bertugas untuk menebak angka misteri\
 while True:
     difficult = input("\nSilahkan pilih tingkat kesulitan [Mudah/Normal/Sulit/Extreme] ").capitalize()
     while difficult != "Mudah" and difficult != "Normal" and difficult != "Sulit" and difficult != "Extreme":
-        difficult = input("Hanya tersedia 4 tingkat kesulitan [Mudah/Normal/Sulit/Extreme] ")
+        difficult = input("Hanya tersedia 4 tingkat kesulitan [Mudah/Normal/Sulit/Extreme] ").capitalize()
 
         if difficult == "Mudah":
             mysterious_number = random.randint(1, 200)
@@ -28,7 +28,7 @@ while True:
         chance = max_try - try_value
         history_number.append(answer)
         
-        if answer == mysterious_number:
+        if answer == mysterious_number :
             print("----------------------------------------------------------------------------------------------")
             print(f"Hebat!! \n~ Kamu berhasil menebak angka misterinya yaitu {mysterious_number} dengan percobaan sebanyak: {len(history_number)} kali\n~ Riwayat tebakan: {history_number}\n")
             break
