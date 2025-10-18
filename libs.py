@@ -7,7 +7,7 @@ def welcome_message():
     print(line)
     print(f"- {desktop} -")
     print(line)
-    print("*^____^* : Selamat Datang...")
+    print("*^____^* : Selamat Datang...\n")
     
 def exit_program():
     line = "-" * (len("＞︿＜ : Sampai jumpa lagi") + 3)
